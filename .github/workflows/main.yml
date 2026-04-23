@@ -1,17 +1,18 @@
-name : My CICD pipeline in GitHUb Actions
+name: My CICD pipeline in GitHub Actions
 
 on:
   push:
-  branches: main
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
-steps:
-  - uses: actions/checkout@v4
-  - name: my first step
-   run: |
-       echo "this is devops Me"
-       uname -a
-     
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: my first step
+        run: |
+          echo "this is devops Me"
+          uname -a
