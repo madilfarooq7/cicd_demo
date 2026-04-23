@@ -14,5 +14,4 @@ steps:
    run: |
        echo "this is devops Me'
        uname -a
-       
      
